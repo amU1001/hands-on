@@ -1,0 +1,279 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-image: url(https://live.staticflickr.com/65535/53594601638_312dd8e000_k.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #C3E0E5;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation */
+nav {
+    background-color: #0d6a81;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    position: relative;
+    padding: 1em 0;
+    text-align: center;
+    flex: 1;
+}
+
+nav ul li {
+    border-right: 1px solid #fff;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+/* Different background colors on hover */
+nav ul li:nth-child(1):hover { background-color: #ADD8E6; }
+nav ul li:nth-child(2):hover { background-color: #FFC0CB; }
+nav ul li:nth-child(3):hover { background-color: #fff; }
+nav ul li:nth-child(4):hover { background-color: #ADD8E6; } 
+
+nav ul li:hover > ul {
+    display: block;
+    background-color: #fff;
+}
+
+/* Change font color on hover */
+nav ul li:hover a { color: #0d6a81; }
+
+/* Submenu */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0d6a81;
+    width: 100%;
+}
+
+nav ul ul li {
+    width: 100%;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+/* Main Content */
+main {
+    background-color: #C3E0E5;
+    padding: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+.left-align{
+    text-align: left;
+} 
+
+/* Columns */
+.row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.column {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.column:nth-child(2) {
+    background-color: #C3E0E5;
+}
+
+.column p {
+    margin: 0;
+}
+
+.column img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Right Column */
+.column.right-column {
+    background-color: #fff;
+}
+
+/* Right Column Text */
+.column.right-column h5 {
+    font-style: italic;
+    margin: 0;
+    text-align: center;
+    color: #0d6a81;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #0d6a81;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    padding: 10px;
+    border: 3px solid #49a1b3;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/*img rule*/
+img{
+    width: fit-content;
+    max-height: 250px;
+    object-fit: scale-down;
+
+}
+
+main{
+    text-align: center;
+}
+
+p{
+    background-color: #fff;
+    border: 1px dotted #FFC0CB;
+    text-align: center;
+}
+/* No Heading Rule */
+.no-heading {
+    font-size: inherit;
+    color: #0d6a81;
+    font-weight:bold;
+    margin: inherit;
+    text-align: center;
+}
+
+/* No Border Rule */
+.no-border {
+    border: none;
+    box-shadow: none;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Contact Info Column */
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    color: #0d6a81;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Table header */
+th {
+    background-color: #0d6a81;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Table data */
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Alternate row background color */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Special row styling for the last row */
+tr:last-child {
+    background-color: #ffe4e1;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #0d6a81;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 20px;
+    clear: both;
+    border-radius: 5px;
+}
+footer img {
+    width: 30px; /* Adjust size as needed */
+    margin: 0 5px; /* Adjust spacing between icons */
+}
+
+footer p{
+    border: none;
+    background: none;
+}
